@@ -1,5 +1,5 @@
 {
-  "name": "temp-next-app",
+  "name": "meba-general-trading-web",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -9,9 +9,13 @@
     "lint": "eslint"
   },
   "dependencies": {
+    "@types/nodemailer": "^7.0.4",
+    "framer-motion": "^12.23.24",
     "next": "16.0.5",
+    "nodemailer": "^7.0.11",
     "react": "19.2.0",
-    "react-dom": "19.2.0"
+    "react-dom": "19.2.0",
+    "react-router-dom": "^7.9.6"
   },
   "devDependencies": {
     "@tailwindcss/postcss": "^4",

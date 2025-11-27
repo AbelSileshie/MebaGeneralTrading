@@ -1,36 +1,83 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Meba General Trading PLC
+
+A professional website for Meba General Trading PLC, a leading import and export company specializing in international trade solutions.
+
+## Features
+
+- **Modern UI/UX**: Professional design optimized for the trading industry
+- **Responsive Design**: Works seamlessly on all devices
+- **Contact Form**: Integrated email functionality with Gmail SMTP
+- **Service Showcase**: Comprehensive display of import and export services
+- **Management Team**: Professional team presentation
+- **Certifications**: Display of company recognitions and awards
+
+## Tech Stack
+
+- **Next.js 16** - React framework with App Router
+- **TypeScript** - Type-safe development
+- **Tailwind CSS 4** - Modern styling
+- **Framer Motion** - Smooth animations
+- **Nodemailer** - Email functionality
 
 ## Getting Started
 
-First, run the development server:
+### Prerequisites
+
+- Node.js 18+ 
+- npm or yarn
+
+### Installation
 
 ```bash
+# Install dependencies
+npm install
+
+# Run development server
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open [http://localhost:3000](http://localhost:3000) in your browser.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+### Environment Variables
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+Create a `.env.local` file in the root directory:
 
-## Learn More
+```env
+SMTP_HOST=smtp.gmail.com
+SMTP_PORT=587
+SMTP_USER=your-email@gmail.com
+SMTP_PASS=your-app-password
+CONTACT_EMAIL=your-email@gmail.com
+```
 
-To learn more about Next.js, take a look at the following resources:
+See `README_EMAIL_SETUP.md` for detailed email setup instructions.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Project Structure
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+```
+├── src/
+│   ├── app/              # Next.js app router pages
+│   │   ├── api/          # API routes
+│   │   ├── contact/      # Contact page
+│   │   └── page.tsx      # Home page
+│   ├── components/       # React components
+│   │   ├── Navigation.tsx
+│   │   ├── Hero.tsx
+│   │   ├── AboutUs.tsx
+│   │   ├── Services.tsx
+│   │   └── ...
+│   └── globals.css       # Global styles
+├── public/               # Static assets
+└── package.json
+```
 
-## Deploy on Vercel
+## Deployment
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+The site can be deployed on:
+- **Vercel** (recommended for Next.js)
+- **Netlify**
+- **Any Node.js hosting platform**
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## License
+
+© 2025 Meba General Trading PLC. All rights reserved.

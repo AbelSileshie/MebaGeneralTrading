@@ -23,7 +23,7 @@ A professional website for Meba General Trading PLC, a leading import and export
 
 ### Prerequisites
 
-- Node.js 18+ 
+- Node.js 18+
 - npm or yarn
 
 ### Installation
@@ -74,6 +74,7 @@ See `README_EMAIL_SETUP.md` for detailed email setup instructions.
 ## Deployment
 
 The site can be deployed on:
+
 - **Vercel** (recommended for Next.js)
 - **Netlify**
 - **Any Node.js hosting platform**
